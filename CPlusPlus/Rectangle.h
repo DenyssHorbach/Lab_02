@@ -17,9 +17,6 @@ class Rectangle{
 
         Rectangle(const Rectangle& other);                          //copy constructor
 
-        Rectangle& operator=(const Rectangle& other);               //copy assignment operator (idk)
-
-        Rectangle(Rectangle&& other) noexcept;                      //move constructor
 
         ~Rectangle();
 

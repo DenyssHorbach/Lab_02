@@ -12,11 +12,6 @@ Rectangle::Rectangle(double width, double height, double x, double y) {
 
 Rectangle::Rectangle(const Rectangle& other) {}
 
-Rectangle& Rectangle::operator=(const Rectangle& other) {
-    return *this;
-}
-
-Rectangle::Rectangle(Rectangle&& other) noexcept {}
 
 Rectangle::~Rectangle() {}
 
