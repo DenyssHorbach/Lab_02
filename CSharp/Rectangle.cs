@@ -7,7 +7,15 @@ namespace Rectangles{
         public double X;
         public double Y;
 
-        public Rectangle(double width, double height, double x, double y)   //counstructor with start coords
+        public Rectangle()   //default (primary) constructor
+        {
+            Width = 1;
+            Height = 1;
+            X = 0;
+            Y = 0;
+        }
+
+        public Rectangle(double width, double height, double x, double y)   //parameterized constructor
         {
             Width = width;
             Height = height;
@@ -15,13 +23,14 @@ namespace Rectangles{
             Y = y;
         }
 
-        public Rectangle(double width, double height)   //constructor with default start coords (0, 0)
+        public Rectangle(Rectangle other)   //copy constructor
         {
-            Width = width;
-            Height = height;
-            X = 0;
-            Y = 0;
+            Width = other.Width;
+            Height = other.Height;
+            X = other.X;
+            Y = other.Y;
         }
+        
 
         public double Area()
         {

@@ -1,4 +1,6 @@
 #pragma once
+#ifndef RECTANGLE_H
+#define RECTANGLE_H
 
 class Rectangle{
 
@@ -28,3 +30,5 @@ class Rectangle{
         double get_x() const;
         double get_y() const;
 };
+
+#endif
