@@ -2,10 +2,10 @@ namespace Rectangles{
 
     class Rectangle
     {
-        public double Width;
-        public double Height;
-        public double X;
-        public double Y;
+        private double Width;
+        private double Height;
+        private double X;
+        private double Y;
 
         public Rectangle()   //default (primary) constructor
         {
